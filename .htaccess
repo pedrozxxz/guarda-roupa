@@ -1,0 +1,12 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(app|database|docs|storage)(/|$) - [F,L,NC]
+</IfModule>
+
+<IfModule mod_authz_core.c>
+    <FilesMatch "(?i)^(\.env|\.gitignore|README\.md)$">
+        Require all denied
+    </FilesMatch>
+</IfModule>

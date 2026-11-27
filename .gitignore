@@ -1,0 +1,12 @@
+# Configurações e arquivos locais
+.env
+app/config/database.local.php
+
+# Logs e arquivos temporários
+storage/logs/*.log
+*.tmp
+*.bak
+
+# Arquivos de sistema
+Thumbs.db
+.DS_Store
